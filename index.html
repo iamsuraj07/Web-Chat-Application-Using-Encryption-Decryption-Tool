@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Page</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="./Screenshot 2024-04-07 121845.png">
+</head>
+<body>
+    <div class="heading">ChatCat</div>
+<div class="chat-container">
+  <div class="chat-box" id="chat-box"></div>
+  <input type="text" id="message-input" placeholder="Type your message...">
+  <input type="password" id="encryption-key" placeholder="Enter Encryption Key">
+  <button onclick="sendMessage()">Send</button>
+</div>
+<div class="decryption-container center-container">
+  <label for="encrypted-input">Enter Encrypted Message:</label>
+  <input type="text" id="encrypted-input">
+  <label for="decryption-key">Enter Decryption Key:</label>
+  <input type="password" id="decryption-key">
+  <button onclick="decryptMessage()">Decrypt</button>
+  <div id="decryption-output"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
